@@ -2,11 +2,13 @@
 ## the inverse of a matrix rather than compute it repeatedly.  The pair of functions in this file
 ## will cache the inverse of a matrix.
 
+## To test the functions, run code in test.R
+
 ## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         # parameter x: a matrix object
-        # local variable inverse_x: inverse of the matrix x
+        # variable inverse_x: inverse of the matrix x
         # always clean inverse_x variable before cache x
         inverse_x <- NULL
         # set function that sets x, and also cleans inverse_x
